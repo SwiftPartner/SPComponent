@@ -68,5 +68,5 @@ iOS开发中常用的控件，下拉刷新……
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
-
+  s.dependency "MJRefresh"
 end
