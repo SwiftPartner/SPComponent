@@ -1,0 +1,6 @@
+framework module Pods_SPComponentExampleTests {
+  umbrella header "Pods-SPComponentExampleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
