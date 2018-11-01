@@ -9,13 +9,14 @@
 import UIKit
 import MJRefresh
 import SnapKit
+import SPComponent
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     private let cellID = "cellID"
     private weak var tableView: UITableView?
     private var numberOfRows = 20
-    private var refreshControl: SPPullToRefreshControl<UITableView>?
+    private var refreshControl: SPComponent.SPPullToRefreshControl<UITableView>?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +44,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func setupPullToRefresh() {
-        let pullTorefreshControll = SPPullToRefreshControl(scrollView: self.tableView!)
+        let pullTorefreshControll = SPComponent.SPPullToRefreshControl<UITableView>(scrollView: self.tableView!)
         self.refreshControl = pullTorefreshControll
         self.refreshControl?.loadDataBlock = { [weak self] refreshType in
             switch refreshType {
