@@ -15,7 +15,7 @@
 		942B930421882F8500F8802E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 942B930321882F8500F8802E /* Assets.xcassets */; };
 		942B930721882F8500F8802E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942B930521882F8500F8802E /* LaunchScreen.storyboard */; };
 		942B931221882F8500F8802E /* SPComponentExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942B931121882F8500F8802E /* SPComponentExampleTests.swift */; };
-		942B931E2188307500F8802E /* PulltoRefreshDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942B931D2188307500F8802E /* PulltoRefreshDemo.swift */; };
+		94B4B631218A997C00ED01D1 /* SPPullToRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B4B630218A997C00ED01D1 /* SPPullToRefreshControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,7 @@
 		942B930D21882F8500F8802E /* SPComponentExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPComponentExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		942B931121882F8500F8802E /* SPComponentExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPComponentExampleTests.swift; sourceTree = "<group>"; };
 		942B931321882F8500F8802E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		942B931D2188307500F8802E /* PulltoRefreshDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulltoRefreshDemo.swift; sourceTree = "<group>"; };
+		94B4B630218A997C00ED01D1 /* SPPullToRefreshControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPPullToRefreshControl.swift; sourceTree = "<group>"; };
 		C48E4110BFBDE07672D7E3F3 /* Pods-SPComponentExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPComponentExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SPComponentExample/Pods-SPComponentExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,7 +114,7 @@
 		942B931C2188302E00F8802E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				942B931D2188307500F8802E /* PulltoRefreshDemo.swift */,
+				94B4B630218A997C00ED01D1 /* SPPullToRefreshControl.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -318,9 +318,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94B4B631218A997C00ED01D1 /* SPPullToRefreshControl.swift in Sources */,
 				942B92FF21882F8400F8802E /* ViewController.swift in Sources */,
 				942B92FD21882F8400F8802E /* AppDelegate.swift in Sources */,
-				942B931E2188307500F8802E /* PulltoRefreshDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
