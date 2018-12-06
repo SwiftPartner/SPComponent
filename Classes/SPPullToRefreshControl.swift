@@ -45,6 +45,7 @@ public class SPPullToRefreshControl<T: UIScrollView>  {
         
         refreshHeader?.refreshingBlock = { [weak self] in
             print("开始刷新")
+            loadMoreFooter?.resetNoMoreData()
             loadMoreFooter?.isHidden = true
             self?.refreshType = .refresh
             self?.loadDataBlock?(.refresh)
@@ -67,6 +68,11 @@ public class SPPullToRefreshControl<T: UIScrollView>  {
         case .refresh:
             scrollView?.mj_footer.isHidden = false
             scrollView?.mj_header.endRefreshing()
+            if !hasMoreData {
+                scrollView?.mj_footer.endRefreshingWithNoMoreData()
+            } else {
+                scrollView?.mj_footer.endRefreshing()
+            }
             print("刷新完成")
         case .loadMore:
             print("加载完成")
