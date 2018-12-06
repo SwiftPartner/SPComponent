@@ -4,7 +4,7 @@ PODS:
     - RxSwift (~> 4.0)
   - RxSwift (4.3.1)
   - SnapKit (4.2.0)
-  - SPComponent (0.0.1):
+  - SPComponent (0.0.2):
     - MJRefresh
 
 DEPENDENCIES:
@@ -29,7 +29,7 @@ SPEC CHECKSUMS:
   RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
   RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
-  SPComponent: 3d083eec0b4eebcac0871d052258c54164769189
+  SPComponent: b3361a93735b4b2ba3af56af5a6811a12543971a
 
 PODFILE CHECKSUM: ff36b98e7879a44e83438349ec9095cbfbf0e10b
 

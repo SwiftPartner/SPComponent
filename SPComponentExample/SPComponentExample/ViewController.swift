@@ -38,7 +38,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     self.numberOfRows = self.numberOfRows + 10
                     print("加载了更多数据")
                 }
-                self.refreshControl?.loadDataCompleted()
+                self.refreshControl?.loadDataCompleted(hasMoreData: self.numberOfRows != 0)
             }
         }
     }
